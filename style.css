@@ -153,6 +153,20 @@ body
     width: 83% !important;
     top: 176px !important;
    }
+   .modal-content {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 81% !important; /* Rimuovi la larghezza massima */
+  }
+
+ #vidita{
+  width: 100% !important;
+  height: 511px !important;
+ }
+ #vidspa{
+  width: 100% !important;
+  height: 511px !important;
+ }
    }
    
 
@@ -161,7 +175,7 @@ body
   .modal-content {
     margin: 20px auto;
     width: 90%;
-    max-width: none; /* Rimuovi la larghezza massima */
+    max-width: 81% !important; /* Rimuovi la larghezza massima */
   }
 }
 
