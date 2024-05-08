@@ -13,9 +13,99 @@
 
 <div>
    <h1 class="data">12 MAGGIO 2024</h1>
-   <button class="mob1">
+   <button id="openModal" class="mob1">
    Click me!
  </button>
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="ita">Buona festa della mamma da parte di Andrea e Giorgio per le nostre incredibili mamme Sinthia e Emilia ! che questo sia un giorno pieno di pace e amore e come il compleanno sia un’altra giornata indimenticabile piena di ricordi da passare insieme e come semplice gesto di amore per sorpresa dedichiamo a questa piccola poesia per ricordare quanto ogni giorno vi vogliamo bene e per quanto siete ogni momento mamme incredibili e speciali:
+      <br><br>Grazie Mamma (Judith Bond) <br>
+      <p id="itapoet" class="poesiastl">Grazie mamma
+      perché mi hai dato
+      la tenerezza delle tue carezze,
+      il bacio della buona notte,
+      il tuo sorriso premuroso,
+      la dolce tua mano che mi dà sicurezza.
+      Hai asciugato in segreto le mie lacrime,
+      hai incoraggiato i miei passi,
+      hai corretto i miei errori,
+      hai protetto il mio cammino,
+      hai educato il mio spirito,
+      con saggezza e con amore
+      mi hai introdotto alla vita.
+      E mentre vegliavi con cura su di me
+      trovavi il tempo
+      per i mille lavori di casa.
+      Tu non hai mai pensato di chiedere un grazie.
+      Grazie mamma. </p>
+      <iframe id="vidita" width="560" height="315" src="https://www.youtube.com/embed/AR7EYOM8NBI?si=JXyLDbAXiRGnncm2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </p>
+    <p id="spa">¡Feliz Día de la Madre de parte de Andrea y Giorgio a nuestras increíbles madres Sinthia y Emilia! que este es un día lleno de paz y amor y que tu cumpleaños es otro día inolvidable lleno de recuerdos para pasar juntos y como un simple gesto de amor por sorpresa te dedicamos este pequeño poema para recordar cuánto te amamos cada día y por cuánto. siempre sois madres increíbles y especiales en cada momento:
+      <br><br>Gracias mamá (Judith Bond)<br>
+      <p id="spapoet" class="poesiastl">Gracias mamá
+      porque me diste
+      la ternura de tus caricias,
+      el beso de buenas noches,
+      tu sonrisa pensativa,
+      tu dulce mano que me da seguridad.
+      Secabas mis lágrimas en secreto,
+      animaste mis pasos,
+      corrigiste mis errores,
+      protegiste mi camino,
+      educaste mi espíritu,
+      con sabiduria y con amor
+      Me presentaste a la vida.
+      Y mientras me vigilabas atentamente
+      encontraste el tiempo
+      para las mil tareas del hogar.
+      Nunca pensaste en pedir un agradecimiento.
+      Gracias mamá. </p>
+      <br>
+      <iframe id="vidspa" width="560" height="315" src="https://www.youtube.com/embed/bvCfsX4OpDY?si=eAY_U-1maEWuhSKu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </p>
+  </div>
+</div>
+<script>// Ottieni riferimenti agli elementi DOM
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("openModal");
+  var ita = document.getElementById("ita");
+  var spa = document.getElementById("spa");
+  var itapoet = document.getElementById("itapoet");
+  var spapoet = document.getElementById("spapoet");
+  var vidita = document.getElementById("vidita");
+  var vidspa = document.getElementById("vidspa");
+  var span = document.getElementsByClassName("close")[0];
+  var timez = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  // Quando l'utente clicca sul pulsante, apri la modal window
+  btn.onclick = function() {
+    modal.style.display = "block";
+    if (timez == 'Europe/Rome') {
+     spa.remove()
+     spapoet.remove()
+     vidspa.remove()
+    } else {
+      ita.remove()
+      itapoet.remove()
+      vidita.remove()
+    }
+  }
+  
+  // Quando l'utente clicca sul pulsante di chiusura, chiudi la modal window
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // Quando l'utente clicca al di fuori della modal window, chiudila
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
 </div>  
 
 <div class="image-container"> 

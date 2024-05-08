@@ -23,7 +23,7 @@ body
     position: relative;
     width: 56%; /* Adatta la larghezza come preferisci */
     height: auto; /* Mantieni la proporzioni dell'immagine originale */
-    margin-top: -3%;
+    margin-top: -1%;
     left: -3%;
     text-align: center;
   }
@@ -74,6 +74,55 @@ body
     transform: translate(-27%, -15%);
     }
 
+    /* Stile della modal window */
+/* Stile della modal window */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 100;
+}
+
+/* Contenuto della modal window */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px; /* Imposta una larghezza massima */
+  font-size: 151%;
+  font-style: italic;
+  font-family: cursive;
+}
+
+/* Stile del pulsante di chiusura */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.poesiastl {
+  font-style: italic;
+  font-family: math;
+}
+
 
  @media (orientation:portrait) {
     .image-container {
@@ -106,3 +155,14 @@ body
    }
    }
    
+
+   /* Stile della modal window su schermi più piccoli */
+@media screen and (max-width: 600px) {
+  .modal-content {
+    margin: 20px auto;
+    width: 90%;
+    max-width: none; /* Rimuovi la larghezza massima */
+  }
+}
+
+
