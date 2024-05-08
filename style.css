@@ -7,7 +7,17 @@ body
     background-size: cover;
 }
 
-
+.mob1 {
+  position: relative !important;
+   left: 29% !important;
+   border:red !important;
+   font-size: 195% !important;
+   color: white !important;
+   background-color: red !important;
+   border-radius: 2em !important;
+   width: 35% !important;
+   top: -62px !important;
+}
 
 .image-container {
     position: relative;
@@ -83,6 +93,16 @@ body
     width: 114%;
     transform: translate(-4%, 73%);
     }
-   
+   .mob1 {
+    position: relative !important;
+    left: 38% !important;
+    border: red !important;
+    font-size: 702% !important;
+    color: white !important;
+    background-color: red !important;
+    border-radius: 2em !important;
+    width: 83% !important;
+    top: 176px !important;
+   }
    }
    
